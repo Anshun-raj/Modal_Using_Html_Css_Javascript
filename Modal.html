@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <link rel="stylesheet" type="text/css" href="Style.css" />
+  <body id="body">
+    <div class="container">
+      <div class="navData">
+        <h2>Practice</h2>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Product</li>
+          <li>Review</li>
+          <li>Contact</li>
+        </ul>
+        <div class="icons">
+          <i class="fas fa-user" onclick="ShowLogin()"></i>
+          <i class="fas fa-sign-in-alt" onclick="ShowSignIn()"></i>
+        </div>
+      </div>
+      <div class="login" id="login">
+        <form>
+          <i class="fas fa-window-close" onclick="hideData1()"></i>
+          <h4>Login</h4>
+          <input type="text" placeholder="Enter Email" />
+          <input type="password" placeholder="Enter password" />
+          <button class="btn">Login</button>
+        </form>
+      </div>
+      <div class="signUp" id="signUp">
+        <form>
+          <i class="fas fa-window-close" onclick="hideData2()"></i>
+          <h4>Sign In</h4>
+          <input type="text" placeholder="Enter Email" />
+          <input type="password" placeholder="Enter password" />
+          <input type="password" placeholder="Enter confirm password" />
+          <button class="btn">SignUp</button>
+        </form>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
